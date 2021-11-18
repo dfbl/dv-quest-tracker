@@ -1,13 +1,17 @@
 ////////////////////////////////////////////////////////////
-//                     ENDARKEN FONT!                     //
+//                   TOGGLE DARK MODE                     //
 ////////////////////////////////////////////////////////////
 
 
 $(document).ready(function () {
-    $(color).click(function () {
+   $(color).click(function () {
+        $('h1').toggleClass('dark2');
         $('h2').toggleClass('dark');
+        $('button').toggleClass('darkbtn');
+        $('.trout').toggleClass('darkdiv');
     });
 });
+
 
 
 ////////////////////////////////////////////////////////////
@@ -29,3 +33,16 @@ function setColor(el) {
 // To add reset button
 // use following in HTML:
 // <button id="reset" title="Reset progress">Reset</button>
+
+
+
+////////////////////////////////////////////////////////////
+//                      HEART TOGGLE                      //
+////////////////////////////////////////////////////////////
+
+$(function() {
+ 
+  $(".heart").on("click", function() {
+    $(this).toggleClass("chatted");
+  });
+}); 
